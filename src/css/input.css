@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@theme{
+    --color-custom-orange:#de6850;
+    --color-custom-yellow:#f2a600;
+}
