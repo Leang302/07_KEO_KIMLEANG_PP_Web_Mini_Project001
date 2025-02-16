@@ -18,15 +18,44 @@
     <!-- nav bar -->
     <header>
       <nav
-        class="p-3 w-full md:w-[80%] m-auto md:p-5 flex justify-between items-center"
+        class="p-5 w-full md:w-[95%] m-auto md:p-8 flex justify-between items-center"
       >
-        <img
-          src="/src/assets/Decore.png"
-          alt=""
-          class="absolute z-[-1] w-[70%] right-0"
-        />
-        <img src="../assets/logo.png" alt="logo" id="logo" class="w-30" />
-        <ul class="flex gap-18 items-center">
+        <!-- decor -->
+        <div class="absolute z-[-1] right-0 top-0 w-sm md:w-xl lg:w-3xl">
+          <img src="/src/assets/Decore.png" alt="" />
+        </div>
+
+        <!-- logo -->
+        <img src="../assets/logo.png" alt="logo" id="logo" class="w-28" />
+
+        <!-- hamburger icon -->
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <!-- nav items -->
+        <ul class="hidden md:flex gap-6 lg:gap-20 items-center">
           <li>Destination</li>
           <li>Hotels</li>
           <li>Flights</li>
@@ -35,36 +64,67 @@
           <li>
             <button class="border rounded px-3 py-2">Sign up</button>
           </li>
-          <li class="flex items-center">
-            <span class="">EN</span>
-            <svg
-              class="w-2.5 h-2.5 ms-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
+          <!-- drop down -->
+          <li class="relative">
+            <button
+              id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto md:dark:hover:text-blue-500 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
+              <span class="">EN</span>
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownNavbar"
+              class="absolute right-0 z-10 hidden font-normal bg-[rgba(255,255,255,0.25)] divide-y divide-gray-100 rounded-lg shadow-sm w-20 dark:bg-gray-700 dark:divide-gray-600"
+            >
+              <ul
+                class="text-sm text-gray-700 dark:text-gray-400"
+                aria-labelledby="dropdownLargeButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-0 lg:px-1 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 text-center"
+                    >CHN</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
+
     <!-- hero section -->
-    <section class="w-[75%] m-auto flex justify-between">
+    <section
+      class="w-[90%] md:w-[85%] lg:w-[75%] m-auto flex justify-center md:justify-between"
+    >
       <!-- right side -->
-      <div class="py-20 w-[35%] space-y-8">
+      <div
+        class="py-5 lg:py-20 text-center md:text-start w-full md:w-[45%] space-y-4 lg:space-y-8 flex flex-col items-center md:items-start"
+      >
         <p class="uppercase">Best destination around the world</p>
-        <h1 class="text-7xl font-bold">
+        <h1 class="text-3xl lg:text-7xl font-bold">
           Travel, enjoy and live a new and full life
         </h1>
-        <p class="w-[80%]">
+        <p class="text-sm md:text-lg w-full md:w-[90%]">
           Built Wicket longer admire do barton vanity itself do in it. Preferred
           to sportsmen it engrossed listening. Park gate sell they west hard for
           the.
@@ -72,7 +132,7 @@
         <!-- button box -->
         <div class="flex gap-5 min-w-0">
           <button
-            class="bg-custom-yellow text-white px-4 py-3 rounded-lg shadow"
+            class="bg-custom-yellow text-white px-2 py-1 lg:px-4 lg:py-3 rounded-lg shadow"
           >
             Find out more
           </button>
@@ -81,7 +141,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="bg-custom-orange p-2 rounded-full text-white w-12 shadow"
+              class="bg-custom-orange p-2 rounded-full text-white w-8 lg:w-12 shadowt text-center"
             >
               <path
                 fill-rule="evenodd"
@@ -94,42 +154,44 @@
         </div>
       </div>
       <!-- left side -->
-      <div class="relative">
-        <!-- women -->
+      <div class="hidden md:block md:relative">
+        <!-- woman -->
         <img
           src="/src/assets/Traveller1.png"
           alt="Traveller 1"
-          class="relative w-2xl z-2"
+          class="relative w-md lg:w-2xl z-10"
         />
         <!-- plane -->
         <img
           src="/src/assets/plane.png"
           alt=""
-          class="absolute top-20 w-30 left-0"
+          class="absolute top-20 w-32 left-16"
         />
         <!-- plane2 -->
         <img
           src="/src/assets/plane.png"
           alt=""
-          class="absolute top-40 w-30 right-0 z-1"
+          class="absolute top-40 w-32 right-0 z-[1]"
         />
       </div>
     </section>
     <!-- Destination section -->
     <section
-      class="w-[68%] m-auto mt-11 flex flex-col justify-center items-center"
+      class="w-[90%] lg:w-[68%] m-auto mt-11 flex flex-col justify-center items-center"
     >
       <p class="text-lg text-gray-600">Top Selling</p>
       <h3 class="text-4xl font-bold">Top Destinations</h3>
       <div class="flex relative mt-10">
         <!-- list of card -->
-        <div class="grid grid-cols-3 mt-3">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 mt-3 justify-items-center gap-5"
+        >
           <!-- card 1 -->
           <div
             class="w-[85%] bg-white border border-gray-200 rounded-3xl shadow"
           >
             <img
-              class="rounded-t-3xl w-full h-[80%] object-cover"
+              class="rounded-t-3xl w-full h-[320px] md:h-[200px] lg:h-[300px] object-cover"
               src="/src/assets/Ancient-Rome.jpg"
               alt=""
             />
@@ -149,7 +211,7 @@
             class="w-[85%] bg-white border border-gray-200 rounded-3xl shadow"
           >
             <img
-              class="rounded-t-3xl w-full h-[80%] object-cover"
+              class="rounded-t-3xl w-full h-[320px] md:h-[200px] lg:h-[300px] object-cover"
               src="/src/assets/london.jpg"
               alt=""
             />
@@ -166,10 +228,10 @@
           </div>
           <!-- card 3 -->
           <div
-            class="w-[85%] bg-white border border-gray-200 rounded-3xl shadow h-110 mr-10"
+            class="w-[85%] bg-white border border-gray-200 rounded-3xl shadow md:mr-10"
           >
             <img
-              class="rounded-t-3xl w-full h-[80%] object-cover"
+              class="rounded-t-3xl w-full h-[320px] md:h-[200px] lg:h-[300px] object-cover"
               src="/src/assets/Ancient-Rome.jpg"
               alt=""
             />
@@ -189,63 +251,70 @@
         <img
           src="/src/assets/decore2.png"
           alt=""
-          class="absolute right-2 bottom-10 z-[-1]"
+          class="hidden md:block md:absolute right-2 bottom-10 z-[-1]"
         />
       </div>
     </section>
     <!-- book next trip section -->
     <section
-      class="flex justify-between w-[68%] m-auto mt-30 items-center relative"
+      class="flex flex-wrap lg:justify-between w-[80%] lg:w-[68%] m-auto mt-30 items-center relative gap-10"
     >
       <!-- left side -->
-      <div class="w-[40%] space-y-8">
+      <div class="w-full lg:w-[40%] lg:space-y-8">
         <p class="text-gray-600">Easy and Fast</p>
         <h3 class="text-5xl font-bold mb-8">
           Book Your Next Trip In 3 Easy Steps
         </h3>
-        <!-- info 1 -->
-        <div class="flex gap-5 items-center">
-          <div
-            class="bg-custom-orange p-2 rounded-xl size-12 flex items-center justify-center"
-          >
-            <img src="/src/assets/destination icon.png" alt="" class="size-5" />
+        <!-- all info -->
+        <div class="space-y-10 lg:space-y-3">
+          <!-- info 1 -->
+          <div class="flex gap-5 items-center">
+            <div
+              class="bg-custom-orange p-2 rounded-xl size-12 flex items-center justify-center"
+            >
+              <img
+                src="/src/assets/destination icon.png"
+                alt=""
+                class="size-5"
+              />
+            </div>
+            <div>
+              <p class="font-bold">Choose Destination</p>
+              <p class="w-full lg:w-[70%]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
           </div>
-          <div>
-            <p class="font-bold">Choose Destination</p>
-            <p class="w-[70%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-              tortor tempus.
-            </p>
+          <!-- info 2 -->
+          <div class="flex gap-5 items-center">
+            <div
+              class="bg-green-800 p-2 rounded-xl size-12 flex items-center justify-center"
+            >
+              <img src="/src/assets/water-sport 1.png" alt="" class="size-5" />
+            </div>
+            <div>
+              <p class="font-bold">Make Payment</p>
+              <p class="w-[70%]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- info 2 -->
-        <div class="flex gap-5 items-center">
-          <div
-            class="bg-green-800 p-2 rounded-xl size-12 flex items-center justify-center"
-          >
-            <img src="/src/assets/water-sport 1.png" alt="" class="size-5" />
-          </div>
-          <div>
-            <p class="font-bold">Make Payment</p>
-            <p class="w-[70%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-              tortor tempus.
-            </p>
-          </div>
-        </div>
-        <!-- info 3 -->
-        <div class="flex gap-5 items-center">
-          <div
-            class="bg-custom-yellow p-2 rounded-xl size-12 flex items-center justify-center"
-          >
-            <img src="/src/assets/taxi 1.png" alt="" class="size-5" />
-          </div>
-          <div>
-            <p class="font-bold">Reach Airpot on Selected</p>
-            <p class="w-[70%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-              tortor tempus.
-            </p>
+          <!-- info 3 -->
+          <div class="flex gap-5 items-center">
+            <div
+              class="bg-custom-yellow p-2 rounded-xl size-12 flex items-center justify-center"
+            >
+              <img src="/src/assets/taxi 1.png" alt="" class="size-5" />
+            </div>
+            <div>
+              <p class="font-bold">Reach Airpot on Selected</p>
+              <p class="w-[70%]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -377,7 +446,7 @@
       </div>
     </section>
     <!--    footer section-->
-    <footer class="bg-white mt-30 w-[70%] mx-auto">
+    <footer class="bg-white mt-30 w-[95%] lg:w-[70%] mx-auto">
       <div class="w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex justify-between">
           <!--            logo and description-->
