@@ -56,11 +56,11 @@
 
         <!-- nav items -->
         <ul class="hidden md:flex gap-6 lg:gap-20 items-center">
-          <li>Destination</li>
-          <li>Hotels</li>
-          <li>Flights</li>
-          <li>Bookings</li>
-          <li>Login</li>
+          <li><a href="destination.html">Destination</a></li>
+          <li><a href="Hotel.html">Hotels</a></li>
+          <li><a href="destination.html">Flights</a></li>
+          <li><a href="TourPackage.html">Bookings</a></li>
+          <li><a href="">Login</a></li>
           <li>
             <button class="border rounded px-3 py-2">Sign up</button>
           </li>
@@ -257,7 +257,7 @@
     </section>
     <!-- book next trip section -->
     <section
-      class="flex flex-wrap lg:justify-between w-[80%] lg:w-[68%] m-auto mt-30 items-center relative gap-10"
+      class="flex flex-wrap md:justify-center lg:justify-between w-[80%] lg:w-[68%] m-auto mt-30 items-center relative gap-10"
     >
       <!-- left side -->
       <div class="w-full lg:w-[40%] lg:space-y-8">
@@ -270,13 +270,9 @@
           <!-- info 1 -->
           <div class="flex gap-5 items-center">
             <div
-              class="bg-custom-orange p-2 rounded-xl size-12 flex items-center justify-center"
+              class="bg-custom-orange p-2 px-3 rounded-xl size-12 flex items-center justify-center"
             >
-              <img
-                src="/src/assets/destination icon.png"
-                alt=""
-                class="size-5"
-              />
+              <i class="fa-brands fa-slack text-white"></i>
             </div>
             <div>
               <p class="font-bold">Choose Destination</p>
@@ -289,9 +285,9 @@
           <!-- info 2 -->
           <div class="flex gap-5 items-center">
             <div
-              class="bg-green-800 p-2 rounded-xl size-12 flex items-center justify-center"
+              class="bg-green-800 p-2 px-3 rounded-xl size-12 flex items-center justify-center"
             >
-              <img src="/src/assets/water-sport 1.png" alt="" class="size-5" />
+              <i class="fa-solid fa-person-swimming text-white"></i>
             </div>
             <div>
               <p class="font-bold">Make Payment</p>
@@ -304,9 +300,9 @@
           <!-- info 3 -->
           <div class="flex gap-5 items-center">
             <div
-              class="bg-custom-yellow p-2 rounded-xl size-12 flex items-center justify-center"
+              class="bg-custom-yellow p-2 px-3 rounded-xl size-12 flex items-center justify-center"
             >
-              <img src="/src/assets/taxi 1.png" alt="" class="size-5" />
+              <i class="fa-solid fa-car text-white"></i>
             </div>
             <div>
               <p class="font-bold">Reach Airpot on Selected</p>
@@ -319,10 +315,10 @@
         </div>
       </div>
       <!-- right side -->
-      <div class="me-18">
+      <div class="w-full md:w-[50%] lg:w-[26%] me-5 lg:me-18 relative">
         <!--      main card-->
         <div
-          class="w-85 bg-white border border-gray-200 rounded-3xl p-5 me-12 shadow"
+          class="w-full bg-white border border-gray-200 rounded-3xl p-5 me-12 shadow"
         >
           <img
             class="rounded-3xl w-full h-40 object-center"
@@ -415,7 +411,7 @@
         </div>
         <!--      progress card-->
         <div
-          class="bg-white border border-gray-200 rounded-2xl px-3 py-2 me-12 shadow flex absolute gap-3 bottom-30 right-[-40px]"
+          class="bg-white border border-gray-200 rounded-2xl px-3 py-2 me-12 shadow flex absolute gap-3 bottom-30 right-[-80px]"
         >
           <img
             src="/src/assets/palace.jpg"
@@ -441,28 +437,28 @@
         <img
           src="/src/assets/blur%20shadow.png"
           alt=""
-          class="absolute top-[-60px] right-[-40px] z-[-1] w-[40%]"
+          class="absolute top-[-60px] right-[-40px] z-[-1] w-[60%]"
         />
       </div>
     </section>
-    <!--    footer section-->
+    <!--    footer section -->
     <footer class="bg-white mt-30 w-[95%] lg:w-[70%] mx-auto">
       <div class="w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex justify-between">
-          <!--            logo and description-->
+          <!-- logo and description -->
           <div class="mb-6 md:mb-0">
             <img
               src="/src/assets/logo.png"
-              class="h-14 me-3"
-              alt="FlowBite Logo"
+              class="h-10 lg:h-14 me-3"
+              alt="Logo"
             />
             <p class="text-sm w-60">
               Book your trip in minute, get full Control for much longer.
             </p>
           </div>
-          <!--            Company-->
-          <div>
-            <h2 class="mb-6 text-md font-bold">Company</h2>
+          <!-- Company -->
+          <div class="mb-6 md:md-0">
+            <h2 class="mb-0 md:mb-6 text-md font-bold">Company</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium space-y-1">
               <li>
                 <a href="https://flowbite.com/" class="hover:underline"
@@ -481,9 +477,9 @@
               </li>
             </ul>
           </div>
-          <!--            contact-->
-          <div>
-            <h2 class="mb-6 text-md font-bold">Contact</h2>
+          <!-- contact-->
+          <div class="mb-6 md:md-0">
+            <h2 class="mb-0 md:mb-6 text-md font-bold">Contact</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium space-y-1">
               <li>
                 <a href="https://flowbite.com/" class="hover:underline"
@@ -502,9 +498,9 @@
               </li>
             </ul>
           </div>
-          <!--            contact-->
-          <div>
-            <h2 class="mb-6 text-md font-bold">More</h2>
+          <!--More-->
+          <div class="mb-6 md:md-0">
+            <h2 class="mb-0 md:mb-6 text-md font-bold">More</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium space-y-1">
               <li>
                 <a href="https://flowbite.com/" class="hover:underline"
@@ -524,23 +520,31 @@
             </ul>
           </div>
           <!-- discover app -->
-          <div class="flex flex-col justify-between">
+          <div class="flex flex-col justify-between gap-2">
             <!-- app icon -->
             <div class="space-x-4">
-              <i class="fa-brands fa-facebook-f p-3 rounded-full shadow-lg"></i>
               <i
-                class="fa-brands fa-instagram p-3 rounded-full shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white"
+                class="fa-brands fa-facebook-f p-2 lg:p-3 rounded-full shadow-lg"
               ></i>
-              <i class="fa-brands fa-tiktok p-3 rounded-full shadow-lg"></i>
+              <i
+                class="fa-brands fa-instagram p-2 lg:p-3 rounded-full shadow-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white"
+              ></i>
+              <i
+                class="fa-brands fa-tiktok p-2 lg:p-3 rounded-full shadow-lg"
+              ></i>
             </div>
-            <p class="text-lg">Discover our app</p>
+            <p class="text-12">Discover our app</p>
             <!-- download icon -->
             <div class="flex gap-2">
               <!-- play store -->
               <div
-                class="flex gap-2 p-1 bg-black rounded-3xl justify-center items-center w-32"
+                class="flex gap-2 p-1 bg-black rounded-3xl justify-center items-center w-28 lg:w-32"
               >
-                <img src="/src/assets/playstore.png" alt="" class="size-5" />
+                <img
+                  src="/src/assets/playstore.png"
+                  alt=""
+                  class="size-3 lg:size-5"
+                />
                 <!-- download text -->
                 <div class="text-white text-[10px]">
                   <p class="font-semibold uppercase">Get it on</p>
@@ -549,9 +553,13 @@
               </div>
               <!-- app store -->
               <div
-                class="flex gap-2 px-1 py-2 bg-black rounded-3xl justify-center items-center w-32"
+                class="flex gap-2 px-1 py-2 bg-black rounded-3xl justify-center items-center w-28 lg:w-32"
               >
-                <img src="/src/assets/apple.png" alt="" class="size-5" />
+                <img
+                  src="/src/assets/apple.png"
+                  alt=""
+                  class="size-3 lg:size-5"
+                />
                 <!-- download text -->
                 <div class="text-white text-[2px]">
                   <p class="text-[10px] font-light">Available on the</p>
@@ -564,7 +572,7 @@
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <!-- copy right -->
         <div class="sm:flex sm:items-center sm:justify-center items-center">
-          <p class="text-gray-400">All rights reserved@jadoo.co</p>
+          <p class="text-gray-400 text-center">All rights reserved@jadoo.co</p>
         </div>
       </div>
     </footer>
