@@ -53,13 +53,23 @@
 
         <!-- nav items -->
         <ul class="hidden md:flex gap-6 lg:gap-20 items-center">
-          <li><a href="destination.html">Destination</a></li>
-          <li><a href="Hotel.html">Hotels</a></li>
-          <li><a href="destination.html">Flights</a></li>
-          <li><a href="TourPackage.html">Bookings</a></li>
-          <li><a href="">Login</a></li>
+          <li class="hover:underline">
+            <a href="destination.html">Destination</a>
+          </li>
+          <li class="hover:underline"><a href="Hotel.html">Hotels</a></li>
+          <li class="hover:underline">
+            <a href="destination.html">Flights</a>
+          </li>
+          <li class="hover:underline">
+            <a href="TourPackage.html">Bookings</a>
+          </li>
+          <li class="hover:underline"><a href="">Login</a></li>
           <li>
-            <button class="border rounded px-3 py-2">Sign up</button>
+            <button
+              class="border rounded px-3 py-2 hover:border-custom-yellow hover:text-custom-yellow"
+            >
+              Sign up
+            </button>
           </li>
           <!-- drop down -->
           <li class="relative">
@@ -112,7 +122,7 @@
     <section
       class="overflow-hidden bg-[url(/src/assets/destinationHero.png)] bg-cover mt-2 flex flex-col py-28 items-center p-2 md:p-10 md:py-40 justify-center"
     >
-      <h1 class="text-white font-bold text-center text-5xl lg:text-7xl">
+      <h1 class="text-white font-bold text-center text-5xl lg:text-7xl font-dm">
         Enjoy in the best way!
       </h1>
       <p class="mt-8 text-white font-bold text-xl lg:text-2xl">
@@ -215,7 +225,9 @@
     <section
       class="w-[90%] md:w-[70%] lg:w-[65%] m-auto mt-18 md:mt-30 space-y-10"
     >
-      <h2 class="text-4xl md:text-4xl font-bold">🔥 Best Deal Hotels</h2>
+      <h2 class="text-4xl md:text-4xl font-bold font-dm">
+        🔥 Best Deal Hotels
+      </h2>
       <div class="flex justify-between">
         <p class="text-gray-500">
           Quality as judged by customers, Book at the ideal price!
@@ -230,7 +242,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-10 p-3 text-white bg-amber-500 rounded-full"
+              class="size-10 p-3 text-white bg-amber-500 hover:bg-amber-600 rounded-full"
             >
               <path
                 stroke-linecap="round"
@@ -247,7 +259,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-10 p-3 text-white bg-amber-500 rounded-full"
+              class="size-10 p-3 text-white bg-amber-500 hover:bg-amber-600 rounded-full"
             >
               <path
                 stroke-linecap="round"
@@ -611,13 +623,13 @@
     <section class="w-full mt-10 md:mt-30 space-y-3">
       <!-- heading text -->
       <div class="w-[90%] lg:w-[65%] m-auto">
-        <h2 class="text-4xl font-bold">Top Rated Hotels</h2>
+        <h2 class="text-4xl font-bold font-dm">Top Rated Hotels</h2>
         <div class="flex justify-between items-center">
           <p class="text-gray-500">
             Quality as judged by customers, Book at the ideal price!
           </p>
           <button
-            class="hidden px-4 py-2 text-white bg-amber-500 rounded-full md:flex text-center shadow-2xl"
+            class="hidden px-4 py-2 text-white bg-amber-500 hover:bg-amber-600 rounded-full md:flex text-center shadow-2xl"
           >
             View More
             <svg
